@@ -1,8 +1,9 @@
 # Landsat-and-Sentinel-Image-Registration
 
-Rough Implementation of the Paper titled "Automatic feature selection for Landsat-8 and Sentinel-2 image co-registration using SURF-FANN".
+Rough Implementation of the Paper titled "Automatic feature selection for Landsat-8 and Sentinel-2 image co-registration using SURF-FANN", 2018.
 
 ### Abstract
 
 Remote sensing data acquired from Landsat series of satellites having multispectral bands with a moderate spatial resolution of 30 m are available from 1973 and Sentinel-2 data at 10 m spatial resolution are available from 2015 onwards with a regular temporal global coverage. The availability of Landsat-8 OLI (Operational Land Imager) and Sentinel-2 MSI (Multispectral Instrument) imagery have offered opportunities to build a wide range of spatio-temporal applications such as monitoring the Earth’s surface frequently based on the combined data sets. However, the standard georeferenced Landsat-8 OLI and Sentinel-2 MSI data products are misaligned, therefore the two data sets must be co-registered at a pixel level before being used together for any study. In this paper, we present a new approach called SURF-FANN (Speeded-Up Robust Features-Fast Approximate Nearest Neighbour) for feature selection and matching between Landsat and Sentinel data. These features (tie-points) are then used for automatic co-registration of Sentinel data with reference to Landsat data. Further, geocoding is performed using conformal, affine and projective transformations followed by resampling using bilinear interpolation, nearest neighbour and cubic convolution. The results were compared with SIFT (Scale Invariant Feature Transform)-FANN which is a popular algorithm for automatic feature extraction and selection. It was found that SURF is computationally faster but has higher RMSE compared to SIFT. However, the feature selection and matching by combining SURF and SIFT with FANN, followed by projective transformation and bilinear interpolation rendered the lowest RMSE of 0.14 compared to using either SIFT or SURF as a stand-alone method.
 
+#### developed by Chakravardhan Reddy, Sandeep.
